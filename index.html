@@ -18,9 +18,9 @@
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-<body> <!-- Mobile first -->
+<body> <!-- Mobile first --> <!-- incompleto-->
     <header>
-        <nav class="container fixed-navbar-top">
+        <nav class="container-fluid fixed-navbar-top">
             <section class="row heading">
                 <nav class="navbar navbar-default">
                     <div class="container-fluid">
@@ -59,8 +59,9 @@
                                     ...
                                     </ul>
                                 </li>
+                                <button type="button" class="btn btn-default navbar-btn navbar-right">Sign in</button>
                             </ul>
-                            <button type="button" class="btn btn-default navbar-btn navbar-right">Sign in</button>
+                            
                         </div><!-- /.navbar-collapse -->
                     </div><!-- /.container-fluid -->
                 </nav>
@@ -70,12 +71,12 @@
 
     <section> <!-- sezione titolo e intestazione e form-card 1-->
         <div class="row title_container">
-            <div class="col-xs-10 col-xs-offset-1 text-center">
+            <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-1 text-center">
                 <h1>Welcome to the developer cloud</h1>
                 <p>We make it simple to launch in the cloud and scale up as you grow – with an intuitive control panel, predictable pricing, team accounts, and more.</p>
             </div>
 
-            <div class="col-xs-10 col-xs-offset-1 text-center">
+            <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-2 text-center">
                 <div class="jumbotron">
                     <div class="container">
                         <h3>Deploy in seconds</h3>    
@@ -228,7 +229,7 @@
                       <!-- <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> -->
                       <span class="sr-only">Next</span>
                     </a>
-                  </div>
+                </div>
             </div>
 
         </div>
@@ -371,17 +372,212 @@
         </div>
     </section>
 
-    <section>
-        <div class="row">
-            <div class="col-xs-10 col-xs-offset-1 text-center">
+    <section><!-- sezione table 7-->
+        <div class="row bottom-card">
+            <div class="col-xs-10 col-xs-offset-1 text-center carousel_card-logo">
                 <h2>Development teams love DigitalOcean</h2>
                 <p>Easily organize your infrastructure with Projects. And with Teams, everyone can get their own account, with just the privileges they need to do their jobs.</p>
-                <div> <!-- Da cancellare -->
-                    <h2>In costruzione...</h2>
-                    <img style="width: 100%;" src="https://cdn.dribbble.com/users/1053528/screenshots/4294507/robot-error.jpg" alt="">
+               
+                   
+                     
+
+                      <div id="carousel1-example-generic" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+                      
+                        <!-- Wrapper for slides -->
+                        
+                            <div class="carousel-inner" role="listbox">
+        
+                                <div class="item active">
+                                    <div class="thumbnail">
+                                        <img src="https://images.prismic.io/www-static/16673e66-0c2f-417b-88bb-f02cc12b8fda_rockerbox-logo-51462da2.png?auto=compress,format" alt="logo_img">
+                                        <div class="caption">
+                                        <p>We have been able to make scaling the technical infrastructure of our business cost effective and efficient.</p>
+                                        <p>Rick O’Toole</p>
+                                        <p>Co-founder and CTO</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+            
+                                <div class="item">
+                                    <div class="thumbnail">
+                                        <img src="https://images.prismic.io/www-static/39ff35f4-8bb8-45cd-b82b-6e8582987335_content-ignite-logo-98619eaf.png?auto=compress,format" alt="logo_img">
+                                        <div class="caption">
+                                        <p>Our hosting costs have decreased by over 90% and we’re running at about 25% of our capacity allowing us to quickly scale.</p>
+                                        <p>Jamie Druce</p>
+                                        <p>Senior Web Developer</p>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="item">
+                                    <div class="thumbnail">
+                                        <img src="https://images.prismic.io/www-static/a5cb3e77-e9a2-4aa7-9399-19218dcacccf_ghost-logo-4f28582e.png?auto=compress,format" alt="logo_img">
+                                        <div class="caption">
+                                        <p>Ghost(Pro) was migrated to DigitalOcean to enable on-demand scaling.</p>
+                                        <p>Sebastian Gierlinger</p>
+                                        <p>Senior DevOps Engineer</p>
+                                        </div>
+                                    </div>
+                                </div>                      
+                            </div>
+                        
+                      
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                          <!-- <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> -->
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                          <!-- <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> -->
+                          <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    
+
+            </div>
+
+
+           
+        </div>
+
+        <div class="container-fluid button_start_now">
+            <div class="col-xs-10 col-xs-offset-1 text-center">
+                <div class="container-fluid text-center">
+                    <h2>Get started now</h2>
+                    <button type="button" class="btn btn-default btn-lg">Large button</button>
                 </div>
             </div>
         </div>
     </section>
 
+    <footer>
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1 clearfix">
+                    <div class="list_footer">
+                        <h6>Company</h6>
+                        <ul>
+                            <li>About</li>
+                            <li>Leadership</li>
+                            <li>Blog</li>
+                            <li>Careers</li>
+                            <li>Partners</li>
+                            <li>Referral Program</li>
+                            <li>Press</li>
+                            <li>Legal</li>
+                            <li>Trust Platform</li>
+                        </ul>
+                    </div>
+
+                    <div class="list_footer">
+                        <h6>Products</h6>
+                        <ul>
+                            <li>Products Overview</li>
+                            <li>Droplets</li>
+                            <li>Kubernetes</li>
+                            <li>Managed Databases</li>
+                            <li>Spaces</li>
+                            <li>Marketplace</li>
+                            <li>Load Balancers</li>
+                            <li>Block Storage</li>
+                            <li>Tools & Integrations</li>
+                            <li>Api</li>
+                            <li>Pricing</li>
+                            <li>Documentation</li>
+                            <li>Release Notes</li>
+                        </ul>
+                    </div>
+
+                    <div class="list_footer">
+                        <h6>Community</h6>
+                        <ul>
+                            <li>Tutorials</li>
+                            <li>Meetups</li>
+                            <li>Q&A</li>
+                            <li>Write for DOnations</li>
+                            <li>Droplets for Demos</li>
+                            <li>Hatch Startup Program</li>
+                            <li>Shop Swag</li>
+                            <li>Research Program</li>
+                            <li>Currents Research</li>
+                            <li>Open Source</li>
+                        </ul>
+                    </div>
+
+                    <div class="list_footer">
+                        <h6>Solutions</h6>
+                        <ul>
+                            <li>Web & Mobile Apps</li>
+                            <li>Website Hosting</li>
+                            <li>Big Data</li>
+                            <li>Managed Services</li>
+                            <li>Business Solutions</li>
+                        </ul>
+                    </div>
+
+                    <div class="list_footer">
+                        <h6>Contact</h6>
+                        <ul>
+                            <li>Support</li>
+                            <li>Sales</li>
+                            <li>Report Abuse</li>
+                            <li>System Status</li>
+                        </ul>
+                    </div>
+
+                    <div class="final-footer">
+                        <div><img src="https://images.prismic.io/www-static%2F903fd83b-8963-42c2-baf6-44f4d6bb83f2_digitalocean-logo-mark.svg?auto=compress,format" alt="logo_footer"></div>
+                        <div><h6>© 2020 DigitalOcean, LLC. All rights reserved.</h6></div>
+                    </div>
+
+                    <div class="logo_social_footer text-center">
+                        <ul>
+                            <li>
+                                <a href="https://twitter.com/digitalocean">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/DigitalOceanCloudHosting">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li><a href="https://www.instagram.com/thedigitalocean/"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://www.youtube.com/user/DigitalOceanVideos"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/digitalocean/"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="https://dev.to/digitalocean"><img src="https://images.prismic.io/www-static/7e862578-08d8-4982-b091-0bdc7ad7bcd1_dev.svg?auto=compress,format" alt="logo_digitalocean"></a></li>
+                            <li><a href="https://www.glassdoor.com/Overview/Working-at-DigitalOcean-EI_IE823482.11,23.htm"><img src="https://images.prismic.io/www-static%2F83dade92-59bc-4d80-88e4-3ef53aacb10d_glassdoor.svg?auto=compress,format" alt=""></a></li>
+                            <li><a href="https://www.builtinnyc.com/company/digitalocean"><img src="https://images.prismic.io/www-static/0a7d85b2-1cce-492a-83fb-652b3cdcaf5a_builtin.svg?auto=compress,format" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
 </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               <!--  <div> Da cancellare 
+                    <h2>In costruzione...</h2>
+                    <img style="width: 100%;" src="https://cdn.dribbble.com/users/1053528/screenshots/4294507/robot-error.jpg" alt="">
+                </div> -->

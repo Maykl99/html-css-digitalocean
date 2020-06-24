@@ -14,6 +14,10 @@ body{
     font-family: 'Hind', sans-serif;
 }
 
+.row{
+    width: 100%;
+}
+
 header{
     height: 70px;
     padding: 10px;
@@ -47,10 +51,18 @@ a{
     border-color: #0060ff;
 }
 
+.input-group{
+    width: 100%;
+}
+
 .input-group .form-control:last-child{  /* input form */
     height: 50px;
-    width: 357px;
+    /* width: 357px; */
     border-radius: 7px;
+}
+
+.nav-pills{
+    background-color: azure;
 }
 
                 /* prima section */
@@ -68,6 +80,7 @@ a{
 }
 
 .title_container{
+    background-image: url('https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg');
     background-color: #0060ff;
     height: 700px;
 }
@@ -169,7 +182,7 @@ a{
     font-weight: 600;
 }
 
-.scale p, .carousel.slide p, .table_city p{
+.scale p, .carousel.slide p, .table_city p, .bottom-card p{
     font-size: 20px;
     /* color: #6f69a5; */
     color: #5b6987;
@@ -259,7 +272,7 @@ a{
     color: white;
 }
 
-.table_city h2{
+.table_city h2, .bottom-card h2, .button_start_now h2{
     font-size: 36px;
     font-weight: 700;
     margin-top: 45px;
@@ -271,4 +284,199 @@ a{
 
 .table_city table{
     margin-bottom: 30px;
+}
+
+
+
+
+
+
+.bottom-card h2{
+    color:#031b4e;
+}
+
+.bottom-card .thumbnail{
+    padding-top: 30px;
+}
+
+.bottom-card .thumbnail>img{
+    width: 45%;
+    padding-bottom: 25px;
+}
+
+.bottom-card .caption p:first-child{
+    font-size: 24px;
+}
+
+.bottom-card .caption p:nth-child(2){
+    margin-bottom: 5px;
+}
+
+.bottom-card .carousel-indicators{
+    bottom: 0;
+}
+
+.bottom-card .thumbnail p:nth-child(2){
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.bottom-card .thumbnail p:last-child{
+    font-size: 14px;
+}
+
+.button_start_now{
+    height: 200px;
+    background-color: #015cff;
+    position: relative;
+}
+
+.button_start_now{
+    padding: 10px 0;
+}
+
+.button_start_now h2{
+    color: white;
+}
+
+.button_start_now .btn-default{
+    color: #0060ff;
+}
+
+footer{
+    background-color: hsl(220,95%,8%);
+}
+
+footer .list_footer h6, footer .list_footer ul li{
+    font-size: 17px;
+}
+
+footer .list_footer h6{
+    color: white;
+}
+
+footer .list_footer ul li, .final-footer h6, .logo_social_footer img{
+    list-style-type: none;
+    color: hsla(0,0%,100%,0.5);    
+}
+
+footer .list_footer{
+    width: calc(100% / 2);
+    float: left;
+    transform: translateX(15%);
+    padding-top: 30px;
+}
+
+footer .list_footer{
+    margin-bottom: 20px;
+}
+
+.final-footer{
+    height: 100px;
+    clear: both;
+    border-top: 1px solid;
+}
+
+.final-footer div{
+    float: left;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.final-footer div:first-child{
+    width: 20%;
+}
+
+.final-footer div:last-child{
+    width: 80%;
+}
+
+.final-footer h6{
+    font-size: 15px;
+}
+
+.logo_social_footer ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding:5px;
+}
+
+.logo_social_footer ul li:nth-child(6){
+    background-color: whitesmoke;
+}
+
+.logo_social_footer ul li:nth-child(7){
+    background-color: whitesmoke;
+}
+
+.logo_social_footer ul li a >img{
+    width: 21px;
+}
+
+.logo_social_footer ul li:last-child{
+    background-color: whitesmoke;
+}
+
+[class^="fab"]{
+    font-size: 20px;
+}
+
+
+
+@media screen and (min-width: 992px){
+
+
+.title_container{
+    padding: 50px 30px;
+}
+
+.title_container h1{
+    font-size: 58px;
+}
+
+.title_container p{
+    font-size: 26px;
+}
+
+.navbar-nav{
+    float: none;
+}
+
+
+
+.icon{
+    width: 30%;
+    float: left;
+}
+
+.icon_card h5{
+    font-size: 18px;
+}
+
+#link{
+    float: inherit ;
+}
+
+.img_cards .menu{
+    width: 30%;
+    float: left;
+}
+
+.img_cards div{
+    width: 20%;
+    float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
