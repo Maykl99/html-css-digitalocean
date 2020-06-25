@@ -69,14 +69,14 @@
        </nav>
     </header>
 
-    <section> <!-- sezione titolo e intestazione e form-card 1-->
-        <div class="row title_container">
-            <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-1 text-center">
+    <section class="title_container"> <!-- sezione titolo e intestazione e form-card 1-->
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 col-md-5 col-md-offset-1 text-center">
                 <h1>Welcome to the developer cloud</h1>
                 <p>We make it simple to launch in the cloud and scale up as you grow – with an intuitive control panel, predictable pricing, team accounts, and more.</p>
             </div>
 
-            <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-2 text-center">
+            <div class="col-xs-10 col-xs-offset-1 col-md-5 col-md-offset-1 text-center">
                 <div class="jumbotron">
                     <div class="container">
                         <h3>Deploy in seconds</h3>    
@@ -116,9 +116,9 @@
         </div>
     </section>
 
-    <section><!-- sezione logo_partners e link 2-->
-        <div class="row icon_card">
-            <div class="col-xs-10 col-xs-offset-1 text-center">
+    <section class="icon_card"><!-- sezione logo_partners e link 2-->
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 col-md-9 col-md-offset-2 text-center">
                 <h5>Innovative businesses trust DigitalOcean</h5>
                 <section class="icon clearfix">
                     <div><img src="https://images.prismic.io/www-static/591cf605-46aa-4a7b-8af5-90036c252c97_docker-bab60eeb.svg?auto=compress,format" alt="icon_partner"></div>
@@ -143,12 +143,12 @@
 
     <section class="clearfix"><!-- sezione menu 3-->
         <div class="row scale">
-            <div class="col-xs-10 col-xs-offset-1 text-center">
+            <div class="col-xs-10 col-xs-offset-1 text-center deploy">
                 <h3>Deploy and scale seamlessly</h3>
                 <p>Our optimized configuration process saves your team time when running and scaling distributed applications, AI & machine learning workloads, hosted services, client websites, or CI/CD environments.</p>
             </div>
 
-            <div class="col-xs-10 col-xs-offset-1 text-center img_cards">
+            <div class="col-xs-10 col-xs-offset-1 col-md-2 col-md-offset-1 text-center img_cards">
                 <ul class="menu">
                     <li>Deploy</li>
                     <li>Manage</li>
@@ -156,39 +156,54 @@
                     <li>Scale</li>
                     <li>Monitor</li>
                 </ul>
-
-                <div>
-                    <img src="https://images.prismic.io/www-static/9d343e9c-fe74-4979-8ad9-e8efc58d6ee7_dropletinboxicon.svg?auto=compress,format" alt="menu_image">
-                    <h4>Kubernetes in minutes</h4>
-                    <p>With Standard, General Purpose, CPU-Optimized or Memory-Optimized Droplets, you can choose the right infrastructure for your workload.</p>
-                </div>
-
-                <div>
-                    <img src="https://images.prismic.io/www-static/936bb585-99ba-460d-ae2f-7bbdae8896cc_stacksplusicon.svg?auto=compress,format" alt="menu_image">
-                    <h4>Flexible compute types</h4>
-                    <p>With Standard, General Purpose, CPU-Optimized or Memory-Optimized Droplets, you can choose the right infrastructure for your workload.</p>
-                </div>
-
-                
-                <div>
-                    <img src="https://images.prismic.io/www-static/16ae92b4-6939-446c-b6a3-0ffec01cdc14_kublogoicon.svg?auto=compress,format" alt="menu_image">
-                    <h4>1-Click App Marketplace</h4>
-                    <p>Quickly deploy projects using one of our preconfigured 1-Click Apps, like LAMP, Docker, and WordPress.</p>
-                </div>
-                
-                <div>
-                    <img src="https://images.prismic.io/www-static/0eee6655-dfce-46b2-ab48-f40ff27d8a73_globeicon.svg?auto=compress,format" alt="menu_image">
-                    <h4>Global availability</h4>
-                    <p>Deploy to any of our data center locations – New York, SF, London, Amsterdam, Bangalore, and more.</p>
-                </div>
-                
             </div>
+            <div class="col-xs-10 col-xs-offset-1 col-md-9 col-md-offset-0 text-center img_cards">
+                <div class="contain_cards clearfix">
+                    <div class="child_contain_cards">
+                
+                        <div>
+                            <div>
+                                <img src="https://images.prismic.io/www-static/9d343e9c-fe74-4979-8ad9-e8efc58d6ee7_dropletinboxicon.svg?auto=compress,format" alt="menu_image">
+                            </div>
+                            <h4>Kubernetes in minutes</h4>
+                            <p>With Standard, General Purpose, CPU-Optimized or Memory-Optimized Droplets, you can choose the right infrastructure for your workload.</p>
+                        </div>
 
+                        <div>
+                            <div>
+                                <img src="https://images.prismic.io/www-static/936bb585-99ba-460d-ae2f-7bbdae8896cc_stacksplusicon.svg?auto=compress,format" alt="menu_image">
+                            </div>
+                            <h4>Flexible compute types</h4>
+                            <p>With Standard, General Purpose, CPU-Optimized or Memory-Optimized Droplets, you can choose the right infrastructure for your workload.</p>
+                        </div>
+
+                    </div>  
+                    <div class="child_contain_cards_second"> 
+
+                        <div>
+                            <div>
+                                <img src="https://images.prismic.io/www-static/16ae92b4-6939-446c-b6a3-0ffec01cdc14_kublogoicon.svg?auto=compress,format" alt="menu_image">
+                            </div>
+                            <h4>1-Click App Marketplace</h4>
+                            <p>Quickly deploy projects using one of our preconfigured 1-Click Apps, like LAMP, Docker, and WordPress.</p>
+                        </div>
+                        
+                        <div>
+                            <div>
+                                <img src="https://images.prismic.io/www-static/0eee6655-dfce-46b2-ab48-f40ff27d8a73_globeicon.svg?auto=compress,format" alt="menu_image">
+                            </div>
+                            <h4>Global availability</h4>
+                            <p>Deploy to any of our data center locations – New York, SF, London, Amsterdam, Bangalore, and more.</p>
+                        </div>
+
+                    </div> 
+                </div>
+            </div>
         </div>
     </section>
 
-    <section><!-- sezione screenshoot 4-->
-        <div class="row carousel_screen">
+    <section class="carousel_screen"><!-- sezione screenshoot 4-->
+        <div class="row">
             <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2  text-center">
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                     <h3>Designed for developers</h3>
@@ -231,7 +246,6 @@
                     </a>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -279,93 +293,99 @@
         </div>
     </section>
 
-    <section><!-- sezione table 6-->
-        <div class="row table_city">
-            <div class="col-xs-10 col-xs-offset-1 text-center">
+    <section class="table_city"><!-- sezione table 6-->
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 text-center">
                 <h2>Service your customers around the world from 13 data centers.</h2>
                 <p>Run your infrastructure near your customers. Industry-low <a>bandwidth pricing</a>, with generous quotas and add-on transfer at just $.01/GiB, makes DigitalOcean perfect for network-heavy apps like VPN and video.</p>
-                <table class="table">
+                <table class="table t_first">
                     <tbody>
                         <tr>
                             <td>AMS2</td>
-                            <td>Amsterdam, Netherlands</td>
+                            <td class="city">Amsterdam, Netherlands</td>
                             <td><a>Test Speed ></a></td>
                         </tr>
 
                         <tr>
                             <td>AMS3</td>
-                            <td>Amsterdam, Netherlands</td>
+                            <td class="city">Amsterdam, Netherlands</td>
                             <td><a>Test Speed ></a></td>
                         </tr>
 
                         <tr>
                             <td>BLR1</td>
-                            <td>Bangalore, India</td>
+                            <td class="city">Bangalore, India</td>
                             <td><a>Test Speed ></a></td>
                         </tr>
 
                         <tr>
                             <td>FRA1</td>
-                            <td>Frankfurt, Germany</td>
+                            <td class="city">Frankfurt, Germany</td>
                             <td><a>Test Speed ></a></td>
                         </tr>
 
                         <tr>
                             <td>LON1</td>
-                            <td>London, UK</td>
+                            <td class="city">London, UK</td>
                             <td><a>Test Speed ></a></td>
                         </tr>
 
                         <tr>
                             <td>NYC1</td>
-                            <td>New York, NY</td>
+                            <td class="city">New York, NY</td>
                             <td><a>Test Speed ></a></td>
                         </tr>
 
                         <tr>
                             <td>NYC2</td>
-                            <td>New York, NY</td>
+                            <td class="city">New York, NY</td>
                             <td><a>Test Speed ></a></td>
                         </tr>
 
+                       
+
+
+
+                    </tbody>
+                </table>
+
+                <table class="table t_second">
+                    <tbody>
                         <tr>
                             <td>NYC3</td>
-                            <td>New York, NY</td>
+                            <td class="city">New York, NY</td>
                             <td><a>Test Speed ></a></td>
                         </tr>
 
                         <tr>
                             <td>SFO1</td>
-                            <td>San Francisco, CA</td>
+                            <td class="city">San Francisco, CA</td>
                             <td><a>Test Speed ></a></td>
                         </tr>
 
                         <tr>
                             <td>SFO2</td>
-                            <td>San Francisco, CA</td>
+                            <td class="city">San Francisco, CA</td>
                             <td><a>Test Speed ></a></td>
                         </tr>
 
                         <tr>
                             <td>SFO3</td>
-                            <td>San Francisco, CA</td>
+                            <td class="city">San Francisco, CA</td>
                             <td><a>Test Speed ></a></td>
                         </tr>
 
                         <tr>
                             <td>SGP1</td>
-                            <td>Singapore</td>
+                            <td class="city">Singapore</td>
                             <td><a>Test Speed ></a></td>
                         </tr>
                         
                         <tr>
                             <td>TOR1</td>
-                            <td>Singapore</td>
+                            <td class="city">Singapore</td>
                             <td><a>Test Speed ></a></td>
                         </tr>
-
-
-
                     </tbody>
                 </table>
             </div>
@@ -374,7 +394,7 @@
 
     <section><!-- sezione table 7-->
         <div class="row bottom-card">
-            <div class="col-xs-10 col-xs-offset-1 text-center carousel_card-logo">
+            <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 text-center carousel_card-logo">
                 <h2>Development teams love DigitalOcean</h2>
                 <p>Easily organize your infrastructure with Projects. And with Teams, everyone can get their own account, with just the privileges they need to do their jobs.</p>
                
@@ -448,18 +468,26 @@
         </div>
 
         <div class="container-fluid button_start_now">
-            <div class="col-xs-10 col-xs-offset-1 text-center">
-                <div class="container-fluid text-center">
-                    <h2>Get started now</h2>
-                    <button type="button" class="btn btn-default btn-lg">Large button</button>
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 text-center text_h2">
+                    <div class="text_start_now">
+                        <h2>Get started now</h2>
+                    </div>
                 </div>
+
+                <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1 text-center btn_text">
+                    <div class="btn_start_now">
+                        <button type="button" class="btn btn-default btn-lg">Large button</button>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
     <footer>
             <div class="row">
-                <div class="col-xs-10 col-xs-offset-1 clearfix">
+                <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1">
                     <div class="list_footer">
                         <h6>Company</h6>
                         <ul>
@@ -530,33 +558,41 @@
                             <li>System Status</li>
                         </ul>
                     </div>
-
-                    <div class="final-footer">
-                        <div><img src="https://images.prismic.io/www-static%2F903fd83b-8963-42c2-baf6-44f4d6bb83f2_digitalocean-logo-mark.svg?auto=compress,format" alt="logo_footer"></div>
-                        <div><h6>© 2020 DigitalOcean, LLC. All rights reserved.</h6></div>
-                    </div>
-
-                    <div class="logo_social_footer text-center">
-                        <ul>
-                            <li>
-                                <a href="https://twitter.com/digitalocean">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.facebook.com/DigitalOceanCloudHosting">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                            </li>
-                            <li><a href="https://www.instagram.com/thedigitalocean/"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="https://www.youtube.com/user/DigitalOceanVideos"><i class="fab fa-youtube"></i></a></li>
-                            <li><a href="https://www.linkedin.com/company/digitalocean/"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a href="https://dev.to/digitalocean"><img src="https://images.prismic.io/www-static/7e862578-08d8-4982-b091-0bdc7ad7bcd1_dev.svg?auto=compress,format" alt="logo_digitalocean"></a></li>
-                            <li><a href="https://www.glassdoor.com/Overview/Working-at-DigitalOcean-EI_IE823482.11,23.htm"><img src="https://images.prismic.io/www-static%2F83dade92-59bc-4d80-88e4-3ef53aacb10d_glassdoor.svg?auto=compress,format" alt=""></a></li>
-                            <li><a href="https://www.builtinnyc.com/company/digitalocean"><img src="https://images.prismic.io/www-static/0a7d85b2-1cce-492a-83fb-652b3cdcaf5a_builtin.svg?auto=compress,format" alt=""></a></li>
-                        </ul>
-                    </div>
                 </div>
+
+            </div>
+            
+
+
+            <div class="container riga">
+                         
+                    <div class="col-xs-10 col-xs-offset-1 col-md-5">
+                        <div class="final-footer">
+                            <div><img src="https://images.prismic.io/www-static%2F903fd83b-8963-42c2-baf6-44f4d6bb83f2_digitalocean-logo-mark.svg?auto=compress,format" alt="logo_footer"></div>
+                            <div><h6>© 2020 DigitalOcean, LLC. All rights reserved.</h6></div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-10 col-xs-offset-1 col-md-5">
+                        <div class="logo_social_footer text-center">
+                            <ul>
+                                <li>
+                                    <a href="https://twitter.com/digitalocean">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/DigitalOceanCloudHosting">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li><a href="https://www.instagram.com/thedigitalocean/"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="https://www.youtube.com/user/DigitalOceanVideos"><i class="fab fa-youtube"></i></a></li>
+                                <li><a href="https://www.linkedin.com/company/digitalocean/"><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div> 
+                    </div>
+                
             </div>
     </footer>
 

@@ -14,10 +14,6 @@ body{
     font-family: 'Hind', sans-serif;
 }
 
-.row{
-    width: 100%;
-}
-
 header{
     height: 70px;
     padding: 10px;
@@ -42,7 +38,7 @@ a{
 }
 
 .navbar-brand img{
-    width: 40%;
+    height: 100%;
 }
 
 .btn-primary:hover {
@@ -66,6 +62,17 @@ a{
 }
 
                 /* prima section */
+
+
+.title_container{
+    background-image: url('https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg');
+    background-color: #0060ff;
+    /* height: 700px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
 .jumbotron{
     padding-top: 15px;
     margin-bottom: 15px;
@@ -79,17 +86,17 @@ a{
     color: white;
 }
 
-.title_container{
-    background-image: url('https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg');
-    background-color: #0060ff;
-    height: 700px;
-}
-
 .title_container h1, .title_container p{
     color: #e9f1ff;
 }
 
+.title_container p{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
 .title_container h1{
+    margin-top: 50px;
     font-size: 31px;
     font-weight: 600;
     padding-bottom: 10px;
@@ -190,6 +197,17 @@ a{
     margin-bottom: 40px;
 }
 
+
+.table > tbody > tr > td{
+    border-bottom: 1px solid hsla(0,0%,100%,0.2);
+    border-top: none;
+}
+
+.table > tbody > tr > .city{
+    color: #fff;
+    opacity: 0.6;
+}
+
 .scale .menu{
     margin-top: 50px;
 }
@@ -203,7 +221,7 @@ a{
 }
 
 .scale .img_cards div{
-    margin: 40px 0;
+    margin: 20px 0;
 }
 
             /* quarta section */
@@ -262,6 +280,9 @@ a{
     color: rgb(22, 51, 255) !important;
 }
 
+#carousel1-example-generic{
+    padding-bottom: 100px;
+}
         /* sesta section */
     
 .table_city{
@@ -286,10 +307,7 @@ a{
     margin-bottom: 30px;
 }
 
-
-
-
-
+        /* settima section */ 
 
 .bottom-card h2{
     color:#031b4e;
@@ -345,6 +363,7 @@ a{
 
 footer{
     background-color: hsl(220,95%,8%);
+    /* height: 550px; */
 }
 
 footer .list_footer h6, footer .list_footer ul li{
@@ -374,7 +393,6 @@ footer .list_footer{
 .final-footer{
     height: 100px;
     clear: both;
-    border-top: 1px solid;
 }
 
 .final-footer div{
@@ -401,52 +419,114 @@ footer .list_footer{
     padding:5px;
 }
 
-.logo_social_footer ul li:nth-child(6){
+/* .logo_social_footer ul li:nth-child(6){
     background-color: whitesmoke;
 }
 
 .logo_social_footer ul li:nth-child(7){
     background-color: whitesmoke;
-}
+} */
 
 .logo_social_footer ul li a >img{
     width: 21px;
 }
 
-.logo_social_footer ul li:last-child{
+/* .logo_social_footer ul li:last-child{
     background-color: whitesmoke;
-}
+} */
 
 [class^="fab"]{
     font-size: 20px;
 }
 
+.riga{
+    border-top: 1px solid;
+    margin: 2px auto;
+}
 
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: 768px){
 
+    .title_container h1 { /* Prima section */ 
+        padding-top: 30px;
+        font-size: 58px;
+        font-weight: 600;
+        padding-bottom: 10px;
+    }
+
+    .bottom-card .thumbnail > img{
+        width: 30%;
+    }
+
+    .title_container p, .deploy p, .carousel.slide p, .table_city p, .bottom-card p{
+        width: 80%;
+        font-size: 26px;
+        margin: auto;
+        padding-bottom: 30px;
+    }
+
+    .jumbotron{
+        width: 60%;
+        margin: auto;
+    }
+
+    .jumbotron + h5{
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+
+    .navbar-nav{
+        float: none;
+        background: transparent;
+    }
+
+    .carousel-inner > .item > a > img, .carousel-inner > .item > img{
+        margin-bottom: 100px;
+    }
+}
+
+
+@media screen and (min-width: 900px){
+
+
+.row{
+    width: 100%;
+}
 
 .title_container{
     padding: 50px 30px;
 }
 
 .title_container h1{
-    font-size: 58px;
+    font-size: 50px;
+}
+.title_container p{
+    width: 100%;
 }
 
-.title_container p{
+.jumbotron{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.deploy p, .carousel.slide p, .table_city p, .bottom-card p{
+    width: 80%;
     font-size: 26px;
+    margin: auto;
+    padding-bottom: 30px;
 }
 
 .navbar-nav{
     float: none;
 }
 
-
-
-.icon{
+/* .icon{
     width: 30%;
     float: left;
+} */
+
+.icon_card #link{
+    width: 100%;
 }
 
 .icon_card h5{
@@ -462,9 +542,29 @@ footer .list_footer{
     float: left;
 }
 
-.img_cards div{
-    width: 20%;
+.img_cards .contain_cards{
+    width: 70%;
+}
+
+.img_cards .contain_cards{
+    width: 100%;
+}
+
+.img_cards .contain_cards [class^="child_contain"]{
     float: left;
+    width: calc(100% / 2);
+}
+
+.child_contain_cards *, .child_contain_cards_second *{
+    text-align: left;
+}
+
+.child_contain_cards>div, .child_contain_cards_second> div{
+    height: 300px;
+}
+
+.child_contain_cards > div{
+    padding-left: 10px;
 }
 
 
@@ -479,19 +579,97 @@ footer .list_footer{
 footer .list_footer{
     width: calc(100% / 5);
     float: left;
-    padding: 20px;
+    padding: 20px 30px;
+}
+
+
+.table_city .t_first, .table_city .t_second{
+    width: calc(90% / 2);
+    float: left;
+    margin-left: 30px;
+}
+
+.table > tbody > tr *{
+    text-align: left;
+}
+
+.table> tbody> tr> td:last-child{
+    text-align: right;
+}
+
+.bottom-card .thumbnail > img{
+    width: 15%;
+}
+
+.bottom-card .caption p:first-child{
+    font-size: 20px;
+}
+
+.bottom-card .carousel_card-logo p, .table_city p, .deploy p{
+    width: 60%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+
+/* .button_start_now div{
+    width: calc(100% / 2);
+    float: left;
+} */
+
+.text_h2, .btn_text{
+    width: 40%;
+    position: relative;
+    height: 180px;
+}
+
+.text_h2>div, .btn_text>div{
+    position: absolute;
+    left: 25%;
+    transform: translateY(-25%);
+}
+
+.text_h2>div{
+    top: 25%;
+}
+
+.btn_text>div{
+    top: 40%;
 }
 
 
 
+.logo_social_footer{
+    height: 100px;
+    padding-top: 34px;
+}
 
 
 
+}
 
+@media screen and (min-width: 1170px){
 
+    .icon{
+        width: 30%;
+        float: left;
+    } 
 
+    .icon_card #link{
+        width: 95%;
+    }
 
+    .icon div{
+        width: 100px;
+        height: 100px;
+    }
 
+    .icon div img{
+        width: 80%;
+        height: 100%;
+    } 
 
-
+    .child_contain_cards p, .child_contain_cards_second p{
+        width: 60%;
+    }
 }
