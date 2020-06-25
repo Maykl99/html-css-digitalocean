@@ -10,6 +10,19 @@ clearfix::after{
     clear: both;
 }
 
+.old:hover .old_p{
+    display: inline-block !important;
+}
+
+.old{
+    height: 80px;
+    cursor: pointer;
+}
+
+.old img{
+    height: 100%;
+}
+
 body{
     font-family: 'Hind', sans-serif;
 }
@@ -73,9 +86,27 @@ a{
     background-position: center top;
 }
 
+.title_container p{
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+ 
+@keyframes slidein { /* l'animazione più brutta della storia di internet */
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}
+
 .jumbotron{
     padding-top: 15px;
     margin-bottom: 15px;
+    margin-top: 30px
 }
 
 .jumbotron h3{
