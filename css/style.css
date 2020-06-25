@@ -469,6 +469,21 @@ footer .list_footer{
 
 
 
+.build  .build-card{
+    width: calc(100% / 4);
+    float: left;
+    text-align: left;
+    padding: 20px;
+}
+
+footer .list_footer{
+    width: calc(100% / 5);
+    float: left;
+    padding: 20px;
+}
+
+
+
 
 
 
